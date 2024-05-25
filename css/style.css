@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+div{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+img{
+    width: 100%;
+}
+
+@font-face {
+    font-family: AvenueDream;
+    src: url('/font/FontsFree-Net-Dream-Avenue.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('/font/FontsFree-Net-Dream-Avenue.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('/font/FontsFree-Net-Dream-Avenue.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('/font/FontsFree-Net-Dream-Avenue.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('/font/FontsFree-Net-Dream-Avenue.ttf') format('svg');               /* Legacy iOS */
+}
+
+.font-imperial-script{
+    font-family: "Imperial Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFCE45;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.font-color-yellow{
+    color: #ffce45;
+}
+
+.cover{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/image/background2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 30%;
+    height: 100vh;
+    background-color: #D32424;
+    padding: 10px;
+    text-align: center;
+}
+
+img.lentera{
+    width: 80%;
+    position: relative;
+    top: -10px;
+    
+}
+
+.border{
+    width: 100%;
+    background-image: url('/image/border.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.fixed-content{
+    width: 70%;
+    height: 100vh;
+    background-image: url('/image/foto_prewedd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.fixed-content img.ornaments{
+    position: absolute;
+    width: 33%;
+    left: 0px;
+    top: 0px;
+}
+
+.fixed-content img.photo{
+    width: 43%;
+}
+
+.fixed-content h1{
+    font-size: 140px;
+    margin: 0 0 0 30px;
+    font-weight: 500;
+    line-height: 120px;
+}
+
+.fixed-content span.and{
+    font-size: 100px;
+}
+
+.nav-container{
+    position: absolute;
+    right: 20px;
+}
+
+.nav-icon{
+    background: #A51414;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 8px 0px;
+}
+
+.nav-icon img, .invitation img, p.instagram img{
+    width: 20px;
+}
+
+.music{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: linear-gradient(88.89deg, #A51414 26.37%, rgba(245, 91, 91, 0.5) 51.89%, #A51414 76.91%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.music div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.music img{
+    width: 100%;
+}
+
+.scrolled-content{
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+
+.section1{
+    width: 100%;
+    height: 100%;
+    background-image: url('/image/section1/background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.height{
+    height: 100vh;
+}
+
+.section1-border{
+    box-sizing: border-box;
+    position: absolute;
+    width: 88%;
+    height: 92%;
+    border: 2px solid #FFCE45;
+}
+
+.section1 img{
+    position: absolute;
+}
+
+.section1 h5{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.section1 h2{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 550;
+}
+
+.section1 h3{
+    font-size: 30px;
+}
+
+.section1 h4{
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.section1 img.tree-left-1{
+    width: 52%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.section1 img.tree-right-1{
+    width: 52%;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.section1 img.tree-left-2{
+    width: 49%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.section1 img.tree-right-2{
+    width: 49%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.section1 img.lentera-1{
+    width: 10%;
+    top: 0;
+    left: 6%;
+    z-index: 1;
+}
+
+.section1 img.lentera-2{
+    width: 21%;
+    top: 0;
+    left: 13%;
+    z-index: 1;
+}
+
+.section1 img.lentera-3{
+    width: 21%;
+    top: 0;
+    left: 69%;
+    z-index: 2;
+}
+
+.section1 img.silhouttes-birds-1{
+    width: 16%;
+    top: 0.5%;
+    right: 50%;
+    z-index: 1;
+}
+
+.section1 img.silhouttes-birds-2{
+    width: 16%;
+    top: 23%;
+    left: 67%;
+    z-index: 1;
+}
+
+.section1 img.cranes-left{
+    width: 36%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.section1 img.cranes-right{
+    width: 36%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    .fixed-content h1{
+        font-size: 120px;
+    }
+    
+    .fixed-content span.and{
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .fixed-content h1{
+        font-size: 100px;
+    }
+    
+    .fixed-content span.and{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 860px) {
+    div.fixed-content{
+        display: none;
+    }
+  
+    div.scrolled-content{
+        width: 100%;
+    }
+
+    div.content{
+        width: 100%;
+    }
+}
