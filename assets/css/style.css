@@ -270,12 +270,13 @@ hr{
     height: 100%;
     background-image: url('../img/section1/background.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .height{
@@ -296,24 +297,29 @@ hr{
 
 .section1 h5{
     font-family: "Pacifico", cursive;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-size: 16px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .section1 h2{
-    font-size: 70px;
-    line-height: 80px;
-    font-weight: 550;
+    font-size: 72.73px;
+    font-weight: 600;
+    margin: 10px;
+    letter-spacing: 2px;
 }
 
 .section1 h3{
-    font-size: 30px;
+    font-size: 43.64px;
+    font-weight: 600;
 }
 
 .section1 h4{
-    font-family: sans-serif;
     font-size: 22px;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section1 img.tree-left-1{
@@ -387,9 +393,25 @@ hr{
 }
 
 .section1 img.cranes-right{
-    width: 36%;
-    left: 0;
+    width: 44%;
+    right: 0;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.section1 img.flowers-1{
+    height: 23%;
+    width: auto;
     bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section1 img.flowers-2{
+    height: 23%;
+    width: auto;
+    bottom: 0;
+    right: 0;
     z-index: 1;
 }
 
