@@ -500,6 +500,7 @@ img.section3-flowers{
 
 .section3 img.groom, .section3 img.bride{
     width: 63%;
+    border-radius: 100%;
     display: block;
 }
 
@@ -530,6 +531,7 @@ img.section3-flowers{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0 20px;
 }
 
 .section3 .groom-ig{
@@ -545,6 +547,74 @@ img.section3-flowers{
 .section3 h5{
     font-size: 13.09px;
     font-weight: 300;
+}
+
+.section4{
+    text-align: center;
+    position: relative;
+}
+
+.section4 .lentera{
+    position: absolute;
+    top: 0;
+}
+
+.section4 .lentera-1{
+    width: 14%;
+    left: 2%;
+}
+
+.section4 .lentera-2{
+    width: 21%;
+    left: 8%;
+}
+
+.section4 .lentera-3{
+    width: 10%;
+    left: 74%;
+}
+
+.section4 .lentera-4{
+    width: 19%;
+    right: 0;
+}
+
+.section4 img.ornament{
+    width: 15%;
+    margin: 70px 0 60px;
+}
+
+.section4 .timesection{
+    display: inline-block;
+    margin-left: 25.45px;
+}
+
+.section4 .timesection:first-child{
+    margin-left: 0;
+}
+
+.section4 .value{
+    margin-bottom: 5px;
+}
+
+.section4 .value, .timelabel{
+    font-size: 17.45px;
+}
+
+.section4 h2{
+    font-size: 43.64px;
+    margin: 35px 0;
+    padding: 0 20px;
+}
+
+.section4 p{
+    font-size: 11.64px;
+    padding: 0 20px;
+    margin-bottom: 39px;
+}
+
+.section4 img.patterns{
+    display: block;
 }
 
 @media (max-width: 1200px) {
