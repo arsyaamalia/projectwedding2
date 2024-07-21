@@ -37,6 +37,10 @@ div, h1, h2, h3, h4, h5, h6, p{
     padding-right: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 img{
     width: 100%;
 }
@@ -526,6 +530,11 @@ img.section3-flowers{
     font-weight: 300;
 }
 
+.section3 a{
+    text-decoration: none;
+    color: white;
+}
+
 .section3 .ig{
     display: flex;
     flex-direction: row;
@@ -615,6 +624,139 @@ img.section3-flowers{
 
 .section4 img.patterns{
     display: block;
+}
+
+.section5{
+    width: 100%;
+    height: 100%;
+    padding: 16% 8% 0 8%;
+    background-image: url('../img/section5/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section5 .ornaments img{
+    position: absolute;
+}
+
+.section5 img.flowers1{
+    width: 51%;
+    top: 0;
+    left: 0;
+}
+
+.section5 img.bird{
+    width: 20%;
+    top: 1%;
+    left: 66%;
+}
+
+.section5 img.bird2{
+    width: 26%;
+    top: 3%;
+    right: 0;
+}
+
+.section5 img.cranes-left{
+    width: 36%;
+    top: 85%;
+    left: 0;
+}
+
+.section5 img.cranes-right{
+    width: 36%;
+    bottom: 0;
+    right: 0;
+}
+
+.section5 img.flowers2{
+    width: 68%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section5 .red-bg{
+    border: 5.09px solid #A51414;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 330px 330px 0px 0px;
+    padding: 22.5% 9% 45%;
+}
+
+.section5 p{
+    border-radius: 330px 330px 0px 0px;
+    font-size: 11.64px;
+    margin-bottom: 50px;
+    padding: 0 2%;
+}
+
+.section5 .venue{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section5 .venue img{
+    border: 3px solid #A51414;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section5 h2{
+    font-size: 47.27px;
+    font-weight: 500;
+    position: absolute;
+    bottom: -28px;
+    font-style: normal;
+    text-align: center;
+}
+
+.section5 h3{
+    font-size: 20.36px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    margin: 15px 0;
+}
+
+.section5 h4{
+    font-size: 14.55px;
+    font-weight: 400;
+}
+
+.section5 h4 span{
+    display: block;
+    margin: 13px 0 10px;
+}
+
+.section5 .maps{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px auto;
+    background: linear-gradient(96.01deg, #FFCE45 1.15%, #C3930E 163.96%);
+    border-radius: 20px;
+}
+
+.section5 .maps img{
+    width: 11%;
+    margin-right: 5px;
+}
+
+.section5 h5{
+    font-size: 13.09px;
+    color: white;
+}
+
+.section5 .height{
+    height: 55px;
 }
 
 @media (max-width: 1200px) {
