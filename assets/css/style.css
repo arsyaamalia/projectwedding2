@@ -52,6 +52,13 @@ img{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.font-playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .font-color-primary{
     color: #ffce45;
 }
@@ -757,6 +764,125 @@ img.section3-flowers{
 
 .section5 .height{
     height: 55px;
+}
+
+.section6{
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.section6 h4{
+    font-size: 20.36px;
+    margin-bottom: 12px;
+}
+
+.section6 .title{
+    position: relative;
+    height: 155px;
+    margin-bottom: 50px;
+}
+
+.section6 h2{
+    font-size: 70px;
+    position: absolute;
+}
+
+.section6 h2.akhsan{
+    left: 20%;
+}
+
+.section6 h2.yoona{
+    top: 70px;
+    right: 20%;
+}
+
+.section6 .love{
+    display: flex;
+    justify-content: center;
+}
+
+.section6 .love img.love_ornaments{
+    width: 6%;
+    display: block;
+}
+
+.section6 .container-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.section6 .line{
+    background-color: white;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+}
+
+.section6 .story{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section6 .story .image{
+    padding: 20px;
+    width: 50%;
+}
+
+.section6 .story img{
+    display: block;
+    border: 5px solid #A51414;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section6 .story .text{
+    width: 50%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.section6 .story .text2{
+    text-align: right;
+}
+
+.section6 h3{
+    font-size: 69.09px;
+    margin-top: -28px;
+}
+
+.section6 p{
+    font-size: 13.09px;
+}
+
+.section6 .ring{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.section6 img.ring{
+    width: 10%;
+    display: block;
+}
+
+.section6 h5{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14.55px;
+}
+
+.section6 img.flowers{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 @media (max-width: 1200px) {
