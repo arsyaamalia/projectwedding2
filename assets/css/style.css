@@ -928,12 +928,11 @@ img.section3-flowers{
 }
 
 .section7 .container-width img{
-    width: auto;
-    height: 100%;
-    min-width: 100%;
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
     display: block;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .section7 div.thumbnail{
@@ -957,6 +956,8 @@ img.section3-flowers{
 .section7 .gallery1, .section7 .gallery2, .section7 .gallery3, .section7 .gallery4, .section7 .gallery5, .section7 .gallery6, .section7 .gallery7, .section7 .gallery8, .section7 .gallery9, .section7 .gallery10{
     border: 3px solid #A51414;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .section7 .gallery7, .section7 .gallery4, .section7 .gallery3, .section7 .gallery6{
@@ -965,6 +966,102 @@ img.section3-flowers{
 
 .section7 .gallery5, .section7 .gallery8, .section7 .gallery2{
     height: 230px;
+}
+
+.section8{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    background-image: url('../img/section8/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section8 img{
+    position: absolute;
+}
+
+.section8 img.tree_left{
+    width: 56%;
+    top: 0;
+    left: 0;
+}
+
+.section8 img.tree_right{
+    width: 56%;
+    top: 0;
+    right: 0;
+}
+
+.section8 .red-bg{
+    width: 84%;
+    padding: 100px 20px;
+    border: 4px solid #A51414;
+    border-radius: 240px;
+    margin-bottom: 75px;
+}
+
+.section8 .title{
+    position: relative;
+    height: 128px;
+    margin-bottom: 50px;
+}
+
+.section8 .title h2{
+    font-size: 58.18px;
+    position: absolute;
+}
+
+.section8 h2.konfirmasi{
+    left: 20px;
+}
+
+.section8 h2.kehadiran{
+    top: 58.18px;
+    right: 20px;
+}
+
+.section8 h2{
+    font-size: 58.18px;
+}
+
+.section8 p{
+    font-size: 11.64px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.section8 h3{
+    font-size: 14.55px;
+    padding: 10px;
+    margin: 0 30px;
+    background: linear-gradient(96.01deg, #FFCE45 1.15%, #C3930E 163.96%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.section8 img.love_birds{
+    width: 68%;
+    bottom: 0;
+}
+
+.section8 img.tree_left_ornaments{
+    width: 58%;
+    bottom: 0;
+    left: 0;
+}
+
+.section8 img.tree_right_ornaments{
+    width: 58%;
+    bottom: 0;
+    right: 0;
 }
 
 @media (max-width: 1200px) {
