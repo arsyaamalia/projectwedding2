@@ -749,6 +749,7 @@ img.section3-flowers{
     padding: 10px;
     margin: 15px auto;
     background: linear-gradient(96.01deg, #FFCE45 1.15%, #C3930E 163.96%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
@@ -883,6 +884,87 @@ img.section3-flowers{
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.section7{
+    text-align: center;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section7 img.vector{
+    width: 9%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section7 h3{
+    font-size: 20.36px;
+}
+
+.section7 h2{
+    font-size: 69.09px;
+    margin: 10px 0;
+}
+
+.section7 p{
+    font-size: 13.09px;
+}
+
+.section7 .line{
+    background-color: white;
+    width: 2px;
+    height: 18.18px;
+    margin: 20px 0;
+}
+
+.section7 .container-width{
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section7 .container-width img{
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.section7 div.thumbnail{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 3px solid #A51414;
+}
+
+.section7 .gallery{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.section7 .gallery-row1, .section7 .gallery-row2, .section7 .gallery-row4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section7 .gallery1, .section7 .gallery2, .section7 .gallery3, .section7 .gallery4, .section7 .gallery5, .section7 .gallery6, .section7 .gallery7, .section7 .gallery8, .section7 .gallery9, .section7 .gallery10{
+    border: 3px solid #A51414;
+    overflow: hidden;
+}
+
+.section7 .gallery7, .section7 .gallery4, .section7 .gallery3, .section7 .gallery6{
+    height: 270px;
+}
+
+.section7 .gallery5, .section7 .gallery8, .section7 .gallery2{
+    height: 230px;
 }
 
 @media (max-width: 1200px) {
