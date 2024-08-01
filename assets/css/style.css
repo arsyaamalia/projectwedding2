@@ -66,6 +66,10 @@ img{
     font-style: normal;
 }
 
+.bg-color-white{
+    background-color: white;
+}
+
 .font-color-primary{
     color: #ffce45;
 }
@@ -981,6 +985,154 @@ img.section3-flowers{
     height: 230px;
 }
 
+.popup{
+    z-index: 999999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    display: none;
+}
+
+.popup-konfirmasi, .popup-kirim{
+    position: relative;
+    width: 85%;
+    border-radius: 30px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+}
+
+.popup-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.popup-header h6{
+    font-size: 17.45px;
+    font-weight: 400;
+}
+
+.popup-konfirmasi .exit-button, .popup-kirim .exit-button{
+    width: 4%;
+    cursor: pointer;
+}
+
+.popup-section{
+    border-top: 2px solid white;
+    padding: 20px;
+    width: 100%;
+}
+
+.popup-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.popup-section p{
+    font-size: 14.55px;
+}
+
+.popup-section input{
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14.55px;
+    border-radius: 10px;
+    margin: 20px 0;
+    outline: none;
+}
+
+.popup-section button{
+    font-size: 14.55px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    background: linear-gradient(96.01deg, #FFCE45 1.15%, #C3930E 163.96%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    color: white;
+}
+
+.popup-kirim .popup-header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-kirim .popup-header h2{
+    margin: 0;
+    font-size: 21.43px;
+}
+
+.popup-kirim .popup-section{
+    padding: 15px;
+}
+
+.popup-kirim .popup-section p{
+    margin-bottom: 0;
+    font-size: 14.29px;
+    font-weight: 600;
+}
+
+.popup-kirim .popup-section .address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.popup-kirim .popup-section .icon-address{
+    width: 6%;
+    margin-right: 10px;
+}
+
+.popup-kirim .popup-section .address p{
+    font-size: 12.86px;
+    font-weight: 400;
+}
+
+.popup-kirim .popup-section .transfer{
+    margin: 15px 0;
+    position: relative;
+}
+
+.popup-kirim .popup-section .transfer .copyrek{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    text-align: right;
+    width: 10.5%;
+}
+
+.popup-kirim .popup-section .indicator{
+    display: flex;
+    justify-content: center;
+}
+
+.popup-kirim .popup-section .indicator .circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+}
+
+.indicator .circle1, .indicator .circle2, .indicator .circle3{
+    margin-right: 5px;
+}
+
 .section8{
     width: 100%;
     height: 100%;
@@ -1432,6 +1584,10 @@ img.section3-flowers{
     }
 
     div.content{
+        width: 100%;
+    }
+
+    .popup{
         width: 100%;
     }
 }

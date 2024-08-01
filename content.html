@@ -34,6 +34,51 @@
             </a>
         </div>
         <div class="scrolled-content">
+            <div class="popup">
+                <div class="popup-konfirmasi bg-color-quaternary">
+                    <div class="popup-header">
+                        <h6>Konfirmasi Kehadiran</h6>
+                        <div class="exit-button" onclick="btnExit()">
+                            <img src="assets/icon/exit.png" alt="exit">
+                        </div>
+                    </div>
+                    <div class="popup-section">
+                        <form action="#">
+                            <p>Jumlah Tamu Hadir :</p>
+                            <input class="font-color-quaternary" type="number" name="jumlah" id="jumlah" min="1" max="5" placeholder="1">
+                            <button type="submit">Saya Akan Hadir</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="popup-kirim bg-color-quaternary">
+                    <div class="popup-header">
+                        <h6>Kirim Hadiah</h6>
+                        <div class="exit-button" onclick="btnExit()">
+                            <img src="assets/icon/exit.png" alt="exit">
+                        </div>
+                    </div>
+                    <div class="popup-section">
+                        <p class="font-color-brown">Kamu bisa kirim kado ke alamat yang tertera di bawah ini :</p>
+                        <div class="address">
+                            <div class="icon-address">
+                                <img src="assets/icon/location.png" alt="location">
+                            </div>
+                            <p class="font-color-primary">Perumahan Citra Land blok A2, No. 4, Tamalanrea, Makassar, Sulawesi Selatan 90121</p>
+                        </div>
+                        <p class="font-color-brown">Atau kamu bisa transfer uang ke rekening di bawah ini :</p>
+                        <div class="transfer">
+                            <div class="copyrek"><a href=""><img src="assets/img/section10/button-copy-rek.png" alt="button-copy-rek"></a></div>
+                            <img src="assets/img/section10/atm.png" alt="atm">
+                        </div>
+                        <div class="indicator">
+                            <div class="bg-color-primary circle circle1"></div>
+                            <div class="bg-color-white circle circle2"></div>
+                            <div class="bg-color-white circle circle3"></div>
+                            <div class="bg-color-white circle circle4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section class="section1 font-color-primary">
                 <div class="height"></div>
                 <div class="section1-border"></div>
@@ -254,13 +299,13 @@
                         <h2 class="kehadiran font-imperial-script font-color-primary">Kehadiran</h2>
                     </div>
                     <p>Merupakan suatu kehormatan dan kebahagian bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i, di bawah ini. Terimakasih.</p>
-                    <h3 class="bg-color-primary">Saya Akan Hadir</h3>
+                    <h3 class="bg-color-primary" onclick="btnKonfirmasi()">Saya Akan Hadir</h3>
                     <p>Maaf, saya tidak bisa hadir</p>
                 </div>
                 <div class="red-bg bg-color-secondary">
                     <h2 class="font-imperial-script font-color-primary">Send Gift</h2>
                     <p>Bagi keluarga dan sahabat yang ingin mengirimkan hadiah berupa kado atau amplop online, silahkan mengirimkannya melalui tautan berikut :</p>
-                    <h3 class="bg-color-primary">Kirim Hadiah</h3>
+                    <h3 class="bg-color-primary" onclick="btnKirim()">Kirim Hadiah</h3>
                 </div>
                 <img class="love_birds" src="assets/img/section8/love_birds.png">
                 <img class="tree_left_ornaments" src="assets/img/section8/tree_left_ornaments.png">
