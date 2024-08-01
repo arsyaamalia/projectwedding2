@@ -389,7 +389,7 @@ hr{
     align-items: center;
     text-align: center;
     cursor: pointer;
-    z-index: 99999999999;
+    z-index: 999999999;
     margin-right: 20px;
 }
 
@@ -1110,7 +1110,7 @@ img.section3-flowers{
 }
 
 .popup{
-    z-index: 999999;
+    z-index: 9999999999;
     position: fixed;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -1335,6 +1335,8 @@ img.section3-flowers{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    z-index: 99999999;
 }
 
 .section8 img.love_birds{
@@ -1713,6 +1715,10 @@ img.section3-flowers{
 
     .popup{
         width: 100%;
+    }
+
+    .container-wrapper{
+        display: none;
     }
 
     .wrapper{
