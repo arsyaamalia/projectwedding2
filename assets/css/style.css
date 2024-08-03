@@ -208,20 +208,60 @@ hr{
     padding-right: 100px;
 }
 
-.fixed-content img.ornaments{
+.fixed-content img.lentera1{
     position: absolute;
-    width: 33%;
-    left: 0px;
+    width: 7%;
+    left: 13%;
     top: 0px;
+    z-index: 1;
 }
 
-.fixed-content img.photo{
-    width: 43%;
+.fixed-content img.lentera2{
+    position: absolute;
+    width: 13%;
+    left: 22%;
+    top: 0px;
+    z-index: 1;
+}
+
+.fixed-content img.tree{
+    position: absolute;
+    width: 42%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.fixed-content .photo-border{
+    position: relative;
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -7%;
+}
+
+.fixed-content .photo{
+    width: 78%;
+    height: 78%;
+    background-image: url('../img/photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.fixed-content img.circle-border{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .fixed-content h1{
     font-size: 140px;
-    margin: 0 0 0 30px;
     font-weight: 600;
     line-height: 120px;
 }
@@ -570,6 +610,7 @@ hr{
 .section2{
     text-align: center;
     padding: 50px 30px;
+    position: relative;
 }
 
 .section2 div.logo{
@@ -1032,6 +1073,7 @@ img.section3-flowers{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .section7 img.vector{
