@@ -45,6 +45,10 @@ img{
     width: 100%;
 }
 
+container.container-content{
+    display: none;
+}
+
 .font-outfit{
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;

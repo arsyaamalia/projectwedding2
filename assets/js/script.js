@@ -70,8 +70,8 @@ const musicPlay = document.querySelector("#music-on");
 const musicStop = document.querySelector("#music-mute");
 const musicAuto = document.querySelector("#musik");
 
-// musicAuto.play();
-// musicAuto.loop = true;
+musicAuto.play();
+musicAuto.loop = true;
 
 function musicMute(event) {
     event.preventDefault();
@@ -85,4 +85,14 @@ function musicOn(event) {
     musik.muted = false;
     musicStop.style.display = "none";
     musicPlay.style.display = "flex";
+}
+
+const containerIndex = document.querySelector(".container-index");
+const containerContent = document.querySelector(".container-content");
+
+function btnBukaUndangan() {
+    console.log("berhasil buka undangan");
+    containerIndex.style.display = "none";
+    containerContent.style.display = "block";
+    start();
 }
