@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Akhsan & Yoona</title>
+</head>
+<body>
+    <container>
+        <div class="container-wrapper">
+            <div class="wrapper bg-color-quaternary">
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/couple.png" alt="couple">
+                    </div>
+                    <span>Couple</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/date.png" alt="date">
+                    </div>
+                    <span>Date</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/gallery.png" alt="gallery">
+                    </div>
+                    <span>Gallery</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/gift.png" alt="gift">
+                    </div>
+                    <span>Gift</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/wishes.png" alt="wishes">
+                    </div>
+                    <span>Wishes</span>
+                </div>
+            </div>
+        </div>
+        <div class="music">
+            <a id="music-on" href="#" onclick="musicMute(event)"><img src="assets/icon/music.png" alt="music"></a>
+            <a id="music-mute" href="#" onclick="musicOn(event)"><img src="assets/icon/music-mute.png" alt="music"></a>
+        </div>
+        <div class="fixed-content">
+            <div class="snow"></div>
+            <img class="lentera1" src="assets/img/lentera1_ornaments.png">
+            <img class="lentera2" src="assets/img/lentera2_ornaments.png">
+            <img class="tree" src="assets/img/tree.png">
+            <div class="photo-border">
+                <img class="circle-border" src="assets/img/circle-border.png">
+                <div class="photo"></div>
+            </div>
+            <h1 class="font-color-primary font-imperial-script">Akhsan <br><span class="and font-imperial-script">&  </span>Yoona</h1>
+        </div>
+        <div class="scrolled-content">
+            <div class="wrapper2 bg-color-quaternary">
+                <div class="button">
+                    <div class="icon">
+                        <img src="assets/icon/couple.png" alt="couple">
+                    </div>
+                    <span>Couple</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/date.png" alt="date">
+                    </div>
+                    <span>Date</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/gallery.png" alt="gallery">
+                    </div>
+                    <span>Gallery</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/gift.png" alt="gift">
+                    </div>
+                    <span>Gift</span>
+                </div>
+                <div class="button bg-color-quaternary">
+                    <div class="icon">
+                        <img src="assets/icon/wishes.png" alt="wishes">
+                    </div>
+                    <span>Wishes</span>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-konfirmasi bg-color-quaternary">
+                    <div class="popup-header">
+                        <h6>Konfirmasi Kehadiran</h6>
+                        <div class="exit-button" onclick="btnExit()">
+                            <img src="assets/icon/exit.png" alt="exit">
+                        </div>
+                    </div>
+                    <div class="popup-section">
+                        <form action="#">
+                            <p>Jumlah Tamu Hadir :</p>
+                            <input class="font-color-quaternary" type="number" name="jumlah" id="jumlah" min="1" max="5" placeholder="1">
+                            <button type="submit">Saya Akan Hadir</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="popup-kirim bg-color-quaternary">
+                    <div class="popup-header">
+                        <h6>Kirim Hadiah</h6>
+                        <div class="exit-button" onclick="btnExit()">
+                            <img src="assets/icon/exit.png" alt="exit">
+                        </div>
+                    </div>
+                    <div class="popup-section">
+                        <p class="font-color-brown">Kamu bisa kirim kado ke alamat yang tertera di bawah ini :</p>
+                        <div class="address">
+                            <div class="icon-address">
+                                <img src="assets/icon/location.png" alt="location">
+                            </div>
+                            <p class="font-color-primary">Perumahan Citra Land blok A2, No. 4, Tamalanrea, Makassar, Sulawesi Selatan 90121</p>
+                        </div>
+                        <p class="font-color-brown">Atau kamu bisa transfer uang ke rekening di bawah ini :</p>
+                        <div class="transfer">
+                            <div class="copyrek"><a href=""><img src="assets/img/section10/button-copy-rek.png" alt="button-copy-rek"></a></div>
+                            <img src="assets/img/section10/atm.png" alt="atm">
+                        </div>
+                        <div class="indicator">
+                            <div class="bg-color-primary circle circle1"></div>
+                            <div class="bg-color-white circle circle2"></div>
+                            <div class="bg-color-white circle circle3"></div>
+                            <div class="bg-color-white circle circle4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section1 font-color-primary">
+                <div class="height"></div>
+                <div class="section1-border"></div>
+                <img class="tree-left-1" src="assets/img/section1/tree-left-1 ornaments.png" alt="tree-left-1">
+                <img class="tree-left-2" src="assets/img/section1/tree-left-2 ornaments.png" alt="tree-left-2">
+                <img class="tree-right-1" src="assets/img/section1/tree-right-1 ornaments.png" alt="tree-right-1">
+                <img class="tree-right-2" src="assets/img/section1/tree-right-2 ornaments.png" alt="tree-right-2">
+                <img class="lentera-1" src="assets/img/section1/lentera-1 ornaments.png" alt="lentera-1">
+                <img class="lentera-2" src="assets/img/section1/lentera-2 ornaments.png" alt="lentera-2">
+                <img class="lentera-3" src="assets/img/section1/lentera-2 ornaments.png" alt="lentera-2">
+                <img class="silhouttes-birds-1" src="assets/img/section1/silhouttes-birds-1 ornaments.png" alt="silhouttes-birds-1">
+                <img class="silhouttes-birds-2" src="assets/img/section1/silhouttes-birds-2 ornaments.png" alt="silhouttes-birds-2">
+                <div class="section1-header font-color-primary">
+                    <h5 class="font-color-primary">The Wedding Of</h5>
+                    <h2 class="font-imperial-script font-color-primary">Akhsan</h2>
+                    <h3 class="font-imperial-script font-color-primary">&</h3>
+                    <h2 class="font-imperial-script font-color-primary">Yoona</h2>
+                    <h4 class="font-color-primary">24 . 04 . 2024</h4>
+                </div>
+                <img class="cranes-left" src="assets/img/section1/cranes-left ornaments.png" alt="cranes-left">
+                <img class="cranes-right" src="assets/img/section1/cranes-right ornaments.png" alt="cranes-right">
+                <img class="flowers-1" src="assets/img/section1/flowers-1 ornaments.png" alt="flowers-1">
+                <img class="flowers-2" src="assets/img/section1/flowers-2 ornaments.png" alt="flowers-2">
+            </section>
+            <section class="section2 bg-color-secondary">
+                <div class="logo"><img class="logo" src="assets/img/section2/logo.png" alt="logo"></div>
+                <p class="font-color-primary">Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                <h2 class="font-color-primary">QS. Ar-Rum Ayat 21</h2>
+            </section>
+            <section class="section3">
+                <img class="section3-flowers flowers-kiri-atas" src="assets/img/section3/flowers-kiri-atas.png">
+                <img class="section3-flowers flowers-kanan-atas" src="assets/img/section3/flowers-kanan-atas.png">
+                <img class="section3-flowers flowers-kiri-bawah" src="assets/img/section3/flowers-kiri-bawah.png">
+                <img class="section3-flowers flowers-kanan-bawah" src="assets/img/section3/flowers-kanan-bawah.png">
+                <div class="red-bg bg-color-secondary">
+                    <p class="font-color-primary">Bismillahirrahmanirrahim
+                        <br>Dengan Memohon Rahmat dan Ridho Allah SWT kami mengundang  Bapak/Ibu, Saudara/i,  untuk menghadiri acara Pernikahan kami.</p>
+                    <div class="profile">
+                        <img class="groom" src="assets/img/section3/groom.png">
+                        <h2>The Groom</h2>
+                    </div>
+                    <h3 class="font-color-primary">Muh Akhsan Frimawan Hasim</h3>
+                    <h4>Putra dari Bapak Lorem &
+                        <br>Ibu Ipsum</h4>
+                    <a href="https://instagram.com/ammarcklok">
+                        <div class="ig groom-ig">
+                            <img class="instagram" src="assets/icon/instagram.png">
+                            <h5>ammarcklok</h5>
+                        </div>
+                    </a>
+                    <div class="profile">
+                        <img class="bride" src="assets/img/section3/bride.png">
+                        <h2>The Bride</h2>
+                    </div>
+                    <h3 class="font-color-primary">Yoona Mirzani</h3>
+                    <h4>Putri dari Bapak Lorem &
+                        <br>Ibu Ipsum</h4>
+                    <a href="https://instagram.com/yurike" style="position: relative; z-index: 1000;">
+                        <div class="ig">
+                            <img class="instagram" src="assets/icon/instagram.png">
+                            <h5>yurike</h5>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="section4 bg-color-secondary">
+                <img class="lentera lentera-1" src="assets/img/section4/lentera_1_ornaments.png">
+                <img class="lentera lentera-2" src="assets/img/section4/lentera_3_ornaments.png">
+                <img class="lentera lentera-3" src="assets/img/section4/lentera_2_ornaments.png">
+                <img class="lentera lentera-4" src="assets/img/section4/lentera_4_ornaments.png">
+                <img class="ornament" src="assets/img/section4/ornament.png">
+                <div class="countdown font-color-primary">
+                    <div class="timesection">
+                        <div id="hari" class="value">00</div>
+                        <div class="timelabel">Hari</div>
+                    </div>
+                    <div class="timesection">
+                        <div id="jam" class="value">00</div>
+                        <div class="timelabel">Jam</div>
+                    </div>
+                    <div class="timesection">
+                        <div id="menit" class="value">00</div>
+                        <div class="timelabel">Menit</div>
+                    </div>
+                    <div class="timesection">
+                        <div id="detik" class="value">00</div>
+                        <div class="timelabel">Detik</div>
+                    </div>
+                </div>
+                <h2 class="font-imperial-script">Menuju Hari Bahagia</h2>
+                <p class="font-color-primary">Hari dimana cinta kita diabadikan dalam ikatan suci pernikahan.</p>
+                <img class="patterns" src="assets/img/section4/patterns.png">
+            </section>
+            <section class="section5">
+                <div class="ornaments">
+                    <img class="flowers1" src="assets/img/section5/flowers1.png">
+                    <img class="bird" src="assets/img/section5/bird.png">
+                    <img class="bird2" src="assets/img/section5/bird2.png">
+                    <img class="flowers2" src="assets/img/section5/flowers2.png">
+                    <img class="cranes-left" src="assets/img/section5/cranes_left.png">
+                    <img class="cranes-right" src="assets/img/section5/cranes_right.png">
+                </div>
+                <div class="red-bg bg-color-secondary">
+                    <p class="font-color-primary">Dengan penuh rasa hormat kami mengharapkan kehadiran Bapak/Ibu/Saudara/i sekalian pada Acara Pernikahan Kami yang Insya Allah akan dilaksanakan pada :</p>
+                    <div class="venue">
+                        <img src="assets/img/section5/venue_akad.png">
+                        <h2 class="font-imperial-script font-color-primary">Akad Nikah</h2>
+                    </div>
+                    <h3>MINGGU, 24 APRIL 2024</h3>
+                    <h4>
+                        Pukul 09:00 WITA - Selesai
+                        <span class="font-color-primary">Bertempat di :</span>
+                        Ballroom Golden Lily A
+                        <br>Hotel Four Points by Sheraton Makassar
+                    </h4>
+                    <a href="#">
+                        <div class="maps bg-color-primary">
+                            <img src="assets/icon/location.png">
+                            <h5>Buka Maps</h5>
+                        </div>
+                    </a>
+                    <div class="height"></div>
+                    <div class="venue">
+                        <img src="assets/img/section5/venue_resepsi.png">
+                        <h2 class="font-imperial-script font-color-primary">Acara Resepsi</h2>
+                    </div>
+                    <h3>MINGGU, 24 APRIL 2024</h3>
+                    <h4>
+                        Pukul 09:00 WITA - Selesai
+                        <span class="font-color-primary">Bertempat di :</span>
+                        Ballroom Golden Lily A
+                        <br>Hotel Four Points by Sheraton Makassar
+                    </h4>
+                    <a href="#" style="position: relative; z-index: 1000;">
+                        <div class="maps bg-color-primary">
+                            <img src="assets/icon/location.png">
+                            <h5>Buka Maps</h5>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="section6 bg-color-secondary">
+                <h4>THE LOVE STORY OF</h4>
+                <div class="title">
+                    <h2 class="akhsan font-imperial-script font-color-primary">Akhsan</h2>
+                    <h2 class="yoona font-imperial-script font-color-primary">& Yoona</h2>
+                </div>
+                <div class="love"><img class="love_ornaments" src="assets/img/section6/love_ornaments.png"></div>
+                <div class="container-story">
+                    <div class="line"></div>
+                    <div class="story">
+                        <div class="image">
+                            <img src="assets/img/section6/2017.png">
+                        </div>
+                        <div class="text">
+                            <h3 class="font-playfair-display">2017</h3>
+                            <p>Sunset after the rain, looking at Makassar city lights, our first date began with a chance meeting under a vibrant night sky.</p>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="text text2">
+                            <h3 class="font-playfair-display">2018</h3>
+                            <p>Months passed, our bond strengthened through shared interests, creating cherished memories from spend time together to reading a books.</p>
+                        </div>
+                        <div class="image">
+                            <img src="assets/img/section6/2018.png">
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="image">
+                            <img src="assets/img/section6/2024.png">
+                        </div>
+                        <div class="text">
+                            <h3 class="font-playfair-display">2024</h3>
+                            <p>In a secluded garden, under fairy lights, Ammar proposed with a heart full of dreams, and i said  'yes' made it perfect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ring"><img class="ring" src="assets/img/section6/ring_ornaments.png"></div>
+                <h5>Getting Married Soon
+                    <br>24 . 04 . 2024
+                </h5>
+                <img class="flowers" src="assets/img/section6/flowers_ornamanets.png">
+            </section>
+            <section class="section7 bg-color-secondary">
+                <img class="vector" src="assets/img/section7/Vector.png">
+                <h3>A GLIMPSE OF</h3>
+                <h2 class="font-imperial-script font-color-primary">Our Moments</h2>
+                <p>“The best thing to hold onto in life is each other”</p>
+                <div class="line"></div>
+                <div class="container-width">
+                    <div class="thumbnail"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/szl4vQ0k2TA?si=sFPIzazz_JhLzNDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="gallery">
+                        <div class="gallery-row1">
+                            <div class="gallery7"><img src="assets/img/section7/7.jpg"></div>
+                            <div class="gallery4"><img src="assets/img/section7/4.jpg"></div>
+                        </div>
+                        <div class="gallery-row2">
+                            <div class="gallery5"><img src="assets/img/section7/5.jpg"></div>
+                            <div class="gallery8"><img src="assets/img/section7/8.jpg"></div>
+                        </div>
+                        <div class="gallery-row3">
+                            <div class="gallery2"><img src="assets/img/section7/2.jpg"></div>
+                        </div>
+                        <div class="gallery-row4">
+                            <div class="gallery3"><img src="assets/img/section7/3.jpg"></div>
+                            <div class="gallery6"><img src="assets/img/section7/6.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section8">
+                <img class="tree_left" src="assets/img/section8/tree_left.png">
+                <img class="tree_right" src="assets/img/section8/tree_right.png">
+                <div class="red-bg bg-color-secondary">
+                    <div class="title">
+                        <h2 class="konfirmasi font-imperial-script font-color-primary">Konfirmasi</h2>
+                        <h2 class="kehadiran font-imperial-script font-color-primary">Kehadiran</h2>
+                    </div>
+                    <p>Merupakan suatu kehormatan dan kebahagian bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i, di bawah ini. Terimakasih.</p>
+                    <h3 class="bg-color-primary" onclick="btnKonfirmasi()">Saya Akan Hadir</h3>
+                    <p>Maaf, saya tidak bisa hadir</p>
+                </div>
+                <div class="red-bg bg-color-secondary">
+                    <h2 class="font-imperial-script font-color-primary">Send Gift</h2>
+                    <p>Bagi keluarga dan sahabat yang ingin mengirimkan hadiah berupa kado atau amplop online, silahkan mengirimkannya melalui tautan berikut :</p>
+                    <h3 class="bg-color-primary" onclick="btnKirim()">Kirim Hadiah</h3>
+                </div>
+                <img class="love_birds" src="assets/img/section8/love_birds.png">
+                <img class="tree_left_ornaments" src="assets/img/section8/tree_left_ornaments.png">
+                <img class="tree_right_ornaments" src="assets/img/section8/tree_right_ornaments.png">
+            </section>
+            <section class="section9 bg-color-secondary">
+                <img class="flowers-left" src="assets/img/section9/flowers-left.png">
+                <img class="flowers-right" src="assets/img/section9/flowers-right.png">
+                <img class="bird" src="assets/img/section9/bird.png">
+                <img class="bird2" src="assets/img/section9/bird2.png">
+                <div class="pic-bg">
+                    <h2 class="font-imperial-script font-color-secondary">Wishes</h2>
+                    <div class="wish">
+                        <div class="inisial">
+                            <p class="bg-color-quaternary">RS</p>
+                        </div>
+                        <img class="polygon" src="assets/img/section9/polygon.png">
+                        <div class="wish-box bg-color-secondary">
+                            <div class="name-time">
+                                <h5>Rafly Sinangga</h5>
+                                <p>30 menit yang lalu</p>
+                            </div>
+                            <div class="location">
+                                <img src="assets/img/section9/location.png">
+                                <p class="font-color-primary">di Makassar</p>
+                            </div>
+                            <p>Selamat broooo, atas pernikahannya, semoga samawaki!!!</p>
+                        </div>
+                    </div>
+                    <div class="wish">
+                        <div class="inisial">
+                            <p class="bg-color-quaternary">FW</p>
+                        </div>
+                        <img class="polygon" src="assets/img/section9/polygon.png">
+                        <div class="wish-box bg-color-secondary">
+                            <div class="name-time">
+                                <h5>Fadly Wong</h5>
+                                <p>1 jam yang lalu</p>
+                            </div>
+                            <div class="location">
+                                <img src="assets/img/section9/location.png">
+                                <p class="font-color-primary">di Surabaya</p>
+                            </div>
+                            <p>Happy Wedding Broooo andrew, Have a happy ever after!!!! Dilimpahkan rezeki, sehat selalu, goals yang mau di capai bisa dicapai bersamaaaaaaa. Have a wonderful wedding.</p>
+                        </div>
+                    </div>
+                    <div class="wish">
+                        <div class="inisial">
+                            <p class="bg-color-quaternary">HH</p>
+                        </div>
+                        <img class="polygon" src="assets/img/section9/polygon.png">
+                        <div class="wish-box bg-color-secondary">
+                            <div class="name-time">
+                                <h5>Hong Hae-In</h5>
+                                <p>2 hari yang lalu</p>
+                            </div>
+                            <div class="location">
+                                <img src="assets/img/section9/location.png">
+                                <p class="font-color-primary">di Seoul</p>
+                            </div>
+                            <p>Happy Wedding ci Claudine and husband. May your marriage last a lifetime fill with lots of love, blessing, and happiness. Warmest wishes on your big day as you start a new chapter of life.</p>
+                        </div>
+                    </div>
+                    <h3 class="font-imperial-script font-color-secondary">Convey your wishes 
+                        <br>to the Bride and Groom
+                    </h3>
+                    <form action="#">
+                        <input type="text" placeholder="Nama Lengkap" class="font-outfit font-color-quaternary">
+                        <input type="text" placeholder="Alamat" class="font-outfit font-color-quaternary">
+                        <input type="text" placeholder="Ucapan atau doa" class="font-outfit font-color-quaternary">
+                        <button type="submit" class="font-outfit bg-color-secondary">Kirim Ucapan</button>
+                    </form>
+                </div>
+            </section>
+            <section class="section10 bg-color-secondary">
+                <img class="lentera lentera-1" src="assets/img/section10/lentera-1.png">
+                <img class="lentera lentera-2" src="assets/img/section10/lentera-2.png">
+                <img class="lentera lentera-3" src="assets/img/section10/lentera-3.png">
+                <img class="left tree-left-top" src="assets/img/section10/tree-left-top.png">
+                <img class="left tree-left-bottom" src="assets/img/section10/tree-left-bottom.png">
+                <img class="right tree-right-top" src="assets/img/section10/tree-right-top.png">
+                <img class="right tree-right-bottom" src="assets/img/section10/tree-right-bottom.png">
+                <div class="foto-border">
+                    <img class="foto" src="assets/img/section10/photo.png">
+                    <img class="border" src="assets/img/section10/border.png">
+                </div>
+                <div class="title">
+                    <h2 class="akhsan font-imperial-script font-color-primary">Akhsan</h2>
+                    <h2 class="yoona font-imperial-script font-color-primary"><span class="font-imperial-script">&</span> Yoona</h2>
+                </div>
+                <h4 class="font-outfit">Merupakan suatu kehormatan dan kebahagiaan bagi kami jika Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do’a restu kepada kedua mempelai.</h4>
+                <h3 class="font-outfit">Turut Mengundang :</h3>
+                <h4 class="font-outfit">Keluarga Besar Cristiano Ronaldo
+                    <br>Keluarga Besar Daeng Sutte
+                    <br>Keluarga Besar IKA 212 Ormas</h4>
+                <div class="line"></div>
+                <p class="font-outfit">Copyright © 2024 Created with <img src="assets/img/section10/love.png"> by <span class="font-outfit">Nama Brand</span></p>
+                <img class="flowers-left" src="assets/img/section10/flowers-left.png">
+                <img class="flowers-right" src="assets/img/section10/flowers-right.png">
+            </section>
+        </div>
+    </container>
+    <audio src="assets/audio/Louis Island - Run Away with Me.mp3" id="musik"></audio>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        ScrollReveal({ 
+            reset: true, 
+            distance: '30px', 
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('h1, .fixed-content .photo-border', { reset: false, delay: 50, distance: '0px', opacity: 0 });
+        ScrollReveal().reveal('.fixed-content img.lentera1, .fixed-content img.lentera2, .section1 img.lentera-1, .section1 img.lentera-2, .section1 img.lentera-3, .section4 img.lentera, .section10 img.lentera', { reset: false, delay: 50, origin:'top' });
+        ScrollReveal().reveal('.section1 img.cranes-left, .section1 img.cranes-right', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.fixed-content img.tree, .section1 img.tree-left-1, .section1 img.tree-left-2, .section1 img.flowers-1, .section3 img.flowers-kiri-atas, .section3 img.flowers-kiri-bawah, .section5 img.flowers1, .section5 img.flowers2, .section8 img.tree_left, .section8 img.tree_left_ornaments, .section10 img.left', { reset: false, delay: 50, origin:'left' });
+        ScrollReveal().reveal('.section1 img.tree-right-1, .section1 img.tree-right-2, .section1 img.flowers-2, .section3 img.flowers-kanan-atas, .section3 img.flowers-kanan-bawah, .section8 img.tree_right, .section8 img.tree_right_ornaments, .section10 img.right', { reset: false, delay: 50, origin:'right' });
+        ScrollReveal().reveal('.section1 h2, .section1 h3, .section1 h4, .section1 h5, .section1 .section1-border', { reset: false, scale: 0 });
+        ScrollReveal().reveal('.section2 .logo, .section2 h2, .section2 p', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section3 p, .section3 .profile img, .section3 h2, .section3 h3, .section3 h4, .section3 .ig', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section4 img.ornament, .section4 .countdown, .section4 h2, .section4 p, .section4 img.patterns', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section5 img.bird, .section5 img.bird2, .section5 img.cranes-left, .section5 img.cranes-right, .section5 p, .section5 .venue img, .section5 h2, .section5 h3, .section5 h4, .section5 .maps', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section6 h4, .section6 .title, .section6 .love, .section6 .line, .section6 .story, .section6 .ring, .section6 h5, .section6 img.flowers', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section7 img.vector, .section7 h3, .section7 h2, .section7 p, .section7 .line, .section7 .thumbnail', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section7 .gallery7, .section7 .gallery4, .section7 .gallery5, .section7 .gallery8, .section7 .gallery2, .section7 .gallery3, .section7 .gallery6', { reset: false, scale: 0.5 })
+        ScrollReveal().reveal('.section8 .title, .section8 h2, .section8 p, .section8 h3, .section8 img.love_birds', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section9 img.flowers-left, .section9 img.flowers-right, .section9 img.bird, .section9 img.bird2, .section9 h2, .section9 .wish, .section9 h3, .section9 form', { reset: false, delay: 50, origin:'bottom' });
+        ScrollReveal().reveal('.section10 .foto-border, .section10 .title, .section10 h4, .section10 h3, .section10 .line, .section10 p, .section10 img.flowers-left, .section10 img.flowers-right', { reset: false, delay: 50, origin:'bottom' });
+    </script>
+</body>
+</html>
